@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>multitag by Alireza Balouch http://swape.net</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="./jquery.multitag.1.0.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('.tags').multitag();
+});
+    </script>
+    <style>
+body{font-family: sans-serif}
+.sftag{border:1px solid #ccc;padding:5px;overflow:hidden;
+cursor:text;margin:10px 0px;
+}
+.sftag span{padding:1px 6px;border:1px solid #ccc;margin:1px 0;
+background-color:#EEE;color:#333;
+background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#999));
+background: -moz-linear-gradient(-90deg, #EEE, #999);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE', endColorstr='#999');
+text-shadow: 1px 1px 1px #FFF;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+font-size:0.8em;
+line-height: 2em;
+display:inline-block;
+}
+.sftag a{color:red;text-decoration: none;}
+.sftag input{border:none;
+}
+
+    </style>
+  </head>
+  <body>
+      <form action="" method="post" >
+          <b>Tags 1:</b><input class="tags" type="text" name="tags1" id="tags1" value="something,tag 2,tag3,tag4,tag5" style="width:800px"/>
+          <br/><b>Tags 2:</b><input class="tags" type="text" name="tags2" id="tags2" value="x1,x2,x3,x4,x5"/>
+      </form>
+      <div class="log"></div>
+  </body>
+  </html>
