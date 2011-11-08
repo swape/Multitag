@@ -1,6 +1,6 @@
 /*
 Script name: multitag
-Version: 1.0
+Version: 1.1
 Author: Alireza Balouch http://swape.net
 Description: jQuery plugins for making multitag
 Works on: Webkit , mozilla, opera
