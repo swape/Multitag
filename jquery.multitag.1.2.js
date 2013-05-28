@@ -29,8 +29,6 @@ Example:
        strout = strout + '<input type="text" id="' + thisname +'-sftaginput" class="sftaginput" value="" />';
        $(this).after('<div class="sftag" id="' + thisname + '-sftag">' + strout + '</div>');
        $(this).hide();
-       //var thiswidth = $(this).outerWidth();
-       //$('#'+ thisname + '-sftag').width(thiswidth);
        $('#'+ thisname + '-sftag').click(function(){
            $('#'+ thisname + '-sftaginput').focus();
        });
