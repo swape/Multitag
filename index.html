@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>multitag by Alireza Balouch http://swape.net</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-    <script src="./jquery.multitag.1.3.js"></script>
-    <script>
-$(document).ready(function(){
-    $('.tags').multitag();
-});
-    </script>
-    <style>
+	<head>
+		<meta charset="utf-8">
+		<title>multitag by Alireza Balouch http://swape.net</title>
+		<style>
 body{font-family: sans-serif}
 .multitag-tagbox{border:1px solid #ccc;overflow:hidden;cursor:text;margin:10px 0px}
 .multitag-tagbox span{padding:3px 0 3px 10px;border:1px solid #AAA;margin:0 1px 1px 0;background-color:#EEE;color:#555;text-shadow: 1px 1px 1px #FFF;font-size:0.8em;display:inline-block;float:left}
@@ -18,12 +11,20 @@ body{font-family: sans-serif}
 .multitag-tagbox b{float:left}
 .multitag-tagbox a{color:red;text-decoration: none;font-size:12px;line-height:15px;display:inline-block;margin-left:3px;padding:1px 8px;float:right}
 .multitag-tagbox input{border:none;outline:none;float:left;font-size:14px}
-    </style>
-  </head>
-  <body class="formgui">
-      <form action="" method="post" >
-          <b>Tags 1:</b><input class="tags" type="text" name="tags1" id="tags1" value="something,tag 2,tag3,tag4,tag5" style="width:800px"/>
-          <br/><b>Tags 2:</b><input class="tags" type="text" name="tags2" id="tags2" value="x1,x2,x3,x4,x5"/>
-      </form>
-  </body>
-  </html>
+		</style>
+	</head>
+	<body class="formgui">
+		<form action="" method="post" >
+			<b>Tags 1:</b><input class="tags" type="text" name="tags1" id="tags1" value="something,tag 2,tag3,tag4,tag5" style="width:800px"/>
+			<br/><b>Tags 2:</b><input class="tags" type="text" name="tags2" id="tags2" value="x1,x2,x3,x4,x5"/>
+		</form>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<script src="./jquery.multitag.1.3.js"></script>
+		<script>
+$(document).ready(function(){
+	$('.tags').multitag();
+});
+		</script>
+	</body>
+</html>
